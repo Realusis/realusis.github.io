@@ -71,3 +71,34 @@ main a:not(.btn) {
   border: 1px solid #c1ffe9;
   border-radius: 4px;
 }
+
+.service-tools > li::marker,
+.service-steps > li::marker {
+  color: #6ef2c2;
+  font-weight: 700;
+}
+
+.service-tools > li::marker {
+  content: "◆  ";
+}
+
+.service-steps ul {
+  margin: 6px 0;
+  border-left: 2px solid #45665e;
+  list-style-type: circle;
+}
+
+#services .table th,
+#services .table td {
+  padding: 12px;
+  text-align: center;
+}
+
+#services .table thead th {
+  background-color: #6ef2c2;
+  color: #101a20;
+}
+
+#services .table tbody tr:hover td {
+  background-color: #24453c;
+}
