@@ -1,0 +1,15 @@
+:root {
+  --default-font: "Segoe UI", system-ui, sans-serif;
+  --heading-font: "Fira Code", Consolas, monospace;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #a9d9ff;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
