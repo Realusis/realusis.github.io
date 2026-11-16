@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600;700&display=swap");
+
 :root {
   --default-font: "Segoe UI", system-ui, sans-serif;
   --heading-font: "Fira Code", Consolas, monospace;
@@ -12,4 +14,60 @@ h1, h2, h3, h4, h5, h6 {
 p {
   font-size: 1.1rem;
   line-height: 1.7;
+}
+
+#hero .hero-actions .btn {
+  background: #6ef2c2;
+  color: #101a20;
+  border: 1px solid #6ef2c2;
+  border-radius: 6px;
+}
+
+#hero .hero-actions .btn:hover {
+  background: #c1ffe9;
+  color: #101a20;
+}
+
+#hero .hero-actions .btn:active {
+  transform: scale(0.97);
+}
+
+main a:not(.btn) {
+  color: #6ef2c2;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+#about, #resume, #portfolio {
+  padding-block: 80px;
+}
+
+#about .section-title,
+#resume .section-title,
+#portfolio .section-title {
+  margin-bottom: 24px;
+}
+
+#about .intro-content,
+#skills .skill-box,
+.resume .resume-item,
+.portfolio .portfolio-card {
+  border: 1px solid #45665e;
+  border-radius: 12px;
+}
+
+#about .intro-content {
+  padding: 24px;
+}
+
+#header {
+  background: #142923;
+  border-bottom: 1px solid #6ef2c2;
+  box-shadow: 0 4px 16px #0004;
+}
+
+#skills .progress .progress-bar {
+  background: #6ef2c2;
+  border: 1px solid #c1ffe9;
+  border-radius: 4px;
 }
