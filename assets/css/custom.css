@@ -16,14 +16,16 @@ p {
   line-height: 1.7;
 }
 
-#hero .hero-actions .btn {
+#hero .hero-actions .btn,
+#submitBtn {
   background: #6ef2c2;
   color: #101a20;
   border: 1px solid #6ef2c2;
   border-radius: 6px;
 }
 
-#hero .hero-actions .btn:hover {
+#hero .hero-actions .btn:hover,
+#submitBtn:hover {
   background: #c1ffe9;
   color: #101a20;
 }
@@ -159,9 +161,13 @@ main a:not(.btn) {
 }
 
 #services {
-  background: linear-gradient(120deg, #101a20, #1b6b5a, #2a4d8f, #5b2a86, #101a20);
+  background: linear-gradient(120deg, #101a20, #1b6b5a, #24453c, #142923, #101a20);
   background-size: 300% 300%;
   animation: wallpaper 8s ease-in-out infinite;
+}
+
+#services section {
+  background: none;
 }
 
 @keyframes wallpaper {
@@ -189,7 +195,7 @@ main a:not(.btn) {
 }
 
 .kvadratas {
-  border: 2px solid #a9d9ff;;
+  border: 2px solid #a9d9ff;
   animation: suktis 3s linear infinite;
 }
 
@@ -218,5 +224,34 @@ main a:not(.btn) {
 }
 
 #result strong {
+  color: #6ef2c2;
+}
+
+#clearBtn {
+  background: none;
+  color: #6ef2c2;
+  border: 1px solid #6ef2c2;
+}
+
+#contactForm .form-control {
+  background: #142923;
+  color: #fff;
+  border-color: #45665e;
+}
+
+#contactForm .form-control::placeholder {
+  color: #8fa9a1;
+}
+
+#contactForm .form-control:focus {
+  border-color: #6ef2c2;
+  box-shadow: none;
+}
+
+#contactForm .form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.footer a {
   color: #6ef2c2;
 }
