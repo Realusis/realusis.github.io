@@ -102,3 +102,105 @@ main a:not(.btn) {
 #services .table tbody tr:hover td {
   background-color: #24453c;
 }
+
+.kanban, .stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.kanban-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.kanban-col, .stat-box, .level-card, .skill-card {
+  border: 1px solid #45665e;
+  border-radius: 10px;
+  padding: 12px;
+}
+
+.level-card {
+  margin-bottom: 24px;
+}
+
+.level-info {
+  display: flex;
+  justify-content: space-around;
+}
+
+.xp-bar {
+  background: #24453c;
+  border-radius: 8px;
+}
+
+.xp-bar-fill {
+  background: #6ef2c2;
+  color: #101a20;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.skill-card {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill-card h4 {
+  width: 100%;
+}
+
+.level-info strong,
+.stat-box strong {
+  display: block;
+}
+
+#services {
+  background: linear-gradient(120deg, #101a20, #1b6b5a, #2a4d8f, #5b2a86, #101a20);
+  background-size: 300% 300%;
+  animation: wallpaper 8s ease-in-out infinite;
+}
+
+@keyframes wallpaper {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.figuros {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.figura {
+  width: 50px;
+  height: 50px;
+}
+
+.apskritimas {
+  border: 2px solid #6ef2c2;
+  border-radius: 50%;
+  animation: sokineti 1s ease-in-out infinite alternate;
+}
+
+.kvadratas {
+  border: 2px solid #a9d9ff;;
+  animation: suktis 3s linear infinite;
+}
+
+@keyframes sokineti {
+  to { transform: translateY(-20px); }
+}
+
+@keyframes suktis {
+  to { transform: rotate(360deg); }
+}
+
+#about .cta-group .link-underline {
+  text-decoration: none;
+}
