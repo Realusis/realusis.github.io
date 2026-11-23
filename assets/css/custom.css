@@ -204,3 +204,19 @@ main a:not(.btn) {
 #about .cta-group .link-underline {
   text-decoration: none;
 }
+
+#result {
+  border: 1px solid #45665e;
+  border-radius: 10px;
+  padding: 16px 24px;
+  max-width: 420px;
+  margin: 24px auto 0;
+}
+
+#result:empty {
+  display: none;
+}
+
+#result strong {
+  color: #6ef2c2;
+}
